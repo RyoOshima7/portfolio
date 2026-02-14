@@ -1,35 +1,57 @@
 # Portfolio
 
-このリポジトリは、データ分析・Web開発を中心とした学習と成果物をまとめるポートフォリオです。
-就職活動に向けて、学習の過程・改善履歴・成果物を継続的に更新していきます。
+BtoB SaaS領域の **データアナリスト / プロダクトアナリスト** を目指し、  
+SQL・分析・（必要に応じて）Web実装までを **「成果物 + 改善履歴」** として残すリポジトリです。
 
 ---
 
-## 目的
-- データアナリスト / プロダクトアナリストを目指した学習記録の可視化
-- 成果物だけでなく、思考プロセスと改善の履歴を残すこと
+## Highlights（30秒で分かること）
+- **SQL Drills**：問題定義 → 実装 → 振り返り（notes）を統一フォーマットで蓄積（`sql/drills/`）
+- **分析ミニPJ**：問い → 仮説 → 指標 → 検証 → 示唆 の型で整理（`analysis/` 追加予定）
+- **継続運用**：更新ログを残し、学習と品質改善のプロセスを可視化
 
 ---
 
-## 技術スタック（予定含む）
-- Python
-- CSV / データ前処理
+## 成果物（採用担当が見る場所）
+| Category | Title | 内容 | Link |
+|---|---|---|---|
+| SQL Drills | 2026-02 drills | 3問（条件指定 / LIKE / NOT LIKE） | [sql/drills/2026-02/](sql/drills/2026-02/) |
+| SQL Drill | q001_club_in_alias | AS + IN（複数条件） | [sql/drills/2026-02/q001_club_in_alias/](sql/drills/2026-02/q001_club_in_alias/) |
+| SQL Drill | q002_club_name_like_ou | LIKE + OR（部分一致） | [sql/drills/2026-02/q002_club_name_like_ou/](sql/drills/2026-02/q002_club_name_like_ou/) |
+| SQL Drill | q003_address_like_not | LIKE / NOT LIKE + AND | [sql/drills/2026-02/q003_address_like_not/](sql/drills/2026-02/q003_address_like_not/) |
+| Analysis | （準備中） | ファネル/継続率などのミニ分析 | [analysis/](analysis/) |
+| Web | （準備中） | 最小限の可視化/アプリ | [web/](web/) |
+| Notes | 学習メモ | 設計/学びの蓄積 | [notes/](notes/) |
+
+---
+
+## リポジトリ構成
+- `sql/`：SQLドリル・分析用クエリ
+- `analysis/`：分析ミニプロジェクト（問い/仮説/指標/結果/示唆）
+- `web/`：簡易アプリ・UI（必要な範囲で）
+- `notes/`：学習メモ、設計メモ、振り返り
+
+---
+
+## 技術スタック
+### 現在
 - SQL
-- Flask
-- HTML / CSS / JavaScript
 - Git / GitHub
 
----
-
-## コンテンツ構成（予定）
-- /analysis  
-  データ分析の練習・ミニプロジェクト
-- /web  
-  Webアプリ・UI制作物
-- /notes  
-  学習メモ・設計メモ
+### 今後（必要に応じて）
+- Python（データ処理）
+- Flask（簡易Web）
+- HTML / CSS / JavaScript（可視化/UI）
 
 ---
 
-## 更新ログ（週1更新）
+## 次に追加する予定（短期）
+- `analysis/` に **分析ミニPJ** を1本追加（問い→仮説→指標→検証→示唆）
+- SQL drills を「問い→SQL→解釈」まで一段強くする（notes の示唆を増やす）
+- 各成果物フォルダの README を「目的/手順/学び」で統一
+
+---
+
+## 更新ログ
 - 2026-02-17: リポジトリ作成、README初版作成
+- 2026-02-13: SQL drills（2026-02）に q001〜q003 を追加（問題/解答/notes）
