@@ -7,8 +7,29 @@ SQL・分析・（必要に応じて）Web実装までを **「成果物 + 改�
 
 ## Highlights（30秒で分かること）
 - **SQL Drills**：問題定義 → 実装 → 振り返り（notes）を統一フォーマットで蓄積（`sql/drills/`）
-- **分析ミニPJ**：問い → 仮説 → 指標 → 検証 → 示唆 の型で整理（`analysis/` 追加予定）
+- **分析ミニPJ**：問い → 仮説 → 指標 → 検証 → 示唆 の型で整理（`analysis/`）
 - **継続運用**：更新ログを残し、学習と品質改善のプロセスを可視化
+
+---
+
+## Roadmapとの対応（Proofを増やす設計）
+- ロードマップ原本：[`roadmap/`](roadmap/)（master / monthly plan / gantt）
+- 方針：ロードマップの **各IDのProofを、GitHub内のリンクで提示できる形** にしていきます。
+
+| ロードマップカテゴリ | GitHubの置き場所 | 代表的なProof |
+|---|---|---|
+| 資格：基本情報 | `learning/fe_exam/` | 弱点TOP10＋型＋改善ログ |
+| 数学/前提 | `learning/math/` | まとめ＋例題（手計算→Python再現） |
+| SQL | `sql/drills/` | 問題→解答→解説（notes） |
+| Python | `python/` | 小課題＋README（目的/手順/学び） |
+| 統計/検定・A/B | `analysis/ab_testing/` + `learning/statistics/` | 1枚説明メモ＋演習 |
+| 統計/因果 | `analysis/causal_inference/` | 用語整理＋ミニ演習＋1枚 |
+| プロダクト/分析 | `analysis/product_analytics/` | ファネル/継続/解約のミニPJ |
+| BI/可視化 | `bi/` | ダッシュボード設計＋指標定義 |
+| データモデリング | `dwh/modeling/` | 粒度設計＋図＋期待クエリ |
+| データ品質 | `data_quality/` | テスト例＋再発防止メモ |
+| 実務/案件・インターン | `work/case_studies/` | ケーススタディ（公開/架空データ） |
+| 就活 | `career/` | 職務要約/STAR/企業研究 |
 
 ---
 
