@@ -1,38 +1,4 @@
 # 2026-02 SQL Drills
 
-2026年2月に実施した SQL 基礎演習の記録。  
-SELECT 文と条件指定を中心に、SQL の基本的な考え方を整理した。
-
----
-
-## 実施内容
-
-### q001_club_in_alias
-- Link: [q001_club_in_alias/](q001_club_in_alias/)
-- AS を使った別名指定
-- 同一カラムに対する複数条件の指定（IN）
-
-### q002_club_name_like_ou
-- Link: [q002_club_name_like_ou/](q002_club_name_like_ou/)
-- LIKE を使った部分一致検索
-- OR 条件による複数パターン指定
-
-### q003_address_like_not
-- Link: [q003_address_like_not/](q003_address_like_not/)
-- LIKE / NOT LIKE を使った肯定・否定条件
-- AND による複数条件の組み合わせ
-
----
-
-## 今月の学び
-
-- 条件は「日本語 → SQL」に分解して考えると整理しやすい
-- 文字列検索では `%` の位置が意味を大きく変える
-- 否定条件を含む場合は、先に日本語で条件を整理することが重要
-
----
-
-## 次に向けて
-
-- 集計関数（COUNT / SUM）を使った問題に進む
-- JOIN を使った複数テーブルの扱いに慣れる
+- `q001_select_alias.sql` : SELECT / AS（別名）
+- `q002_where_orderby.sql` : WHERE / ORDER BY（複数キーソート）
