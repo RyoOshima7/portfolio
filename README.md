@@ -36,10 +36,9 @@ SQL・分析・（必要に応じて）Web実装までを **「成果物 + 改�
 ## 成果物（採用担当が見る場所）
 | Category | Title | 内容 | Link |
 |---|---|---|---|
-| SQL Drills | 2026-02 drills | 3問（条件指定 / LIKE / NOT LIKE） | [sql/drills/2026-02/](sql/drills/2026-02/) |
-| SQL Drill | q001_club_in_alias | AS + IN（複数条件） | [sql/drills/2026-02/q001_club_in_alias/](sql/drills/2026-02/q001_club_in_alias/) |
-| SQL Drill | q002_club_name_like_ou | LIKE + OR（部分一致） | [sql/drills/2026-02/q002_club_name_like_ou/](sql/drills/2026-02/q002_club_name_like_ou/) |
-| SQL Drill | q003_address_like_not | LIKE / NOT LIKE + AND | [sql/drills/2026-02/q003_address_like_not/](sql/drills/2026-02/q003_address_like_not/) |
+| SQL Drills | 2026-02 drills | 2問（SELECT/AS / WHERE/ORDER BY） | [sql/drills/2026-02/](sql/drills/2026-02/) |
+| SQL Drill | q001_select_alias.sql | SELECT + AS（別名） | [sql/drills/2026-02/q001_select_alias.sql](sql/drills/2026-02/q001_select_alias.sql) |
+| SQL Drill | q002_where_orderby.sql | WHERE + ORDER BY（複数キー） | [sql/drills/2026-02/q002_where_orderby.sql](sql/drills/2026-02/q002_where_orderby.sql) |
 | Analysis | （準備中） | ファネル/継続率などのミニ分析 | [analysis/](analysis/) |
 | Web | （準備中） | 最小限の可視化/アプリ | [web/](web/) |
 | Notes | 学習メモ | 設計/学びの蓄積 | [notes/](notes/) |
