@@ -22,3 +22,4 @@ SQLの基礎〜実務で頻出のパターンを、**1問 = 1ファイル**で�
 - `q003_in_between.sql` : IN / BETWEEN（複数候補・範囲）
 - `q004_like_null.sql` : LIKE / NULL判定（前方一致・IS NULL）
 - `q005_distinct_limit.sql` : DISTINCT / LIMIT（重複排除・先頭N件）
+- `q006_groupby_count.sql` : GROUP BY / COUNT（都道府県ごとの件数集計）

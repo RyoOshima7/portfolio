@@ -20,10 +20,10 @@ SQL・分析・（必要に応じて）Web実装までを **「成果物 + 改�
 - **分析（準備中）**：[`analysis/`](analysis/)
 
 ## 結論（1行）
-- **「SQLを“成果物化（README＋ログ）”できる状態に入った。次はJOIN/集計で“再現性のある型”を固める。**
+- **「SQLを“成果物化（README＋ログ）”しながら、基礎集計（GROUP BY/COUNT）まで積み上げられた。次はJOIN/HAVINGで“再現性のある型”を固める。**
 
 ## 次のアクション（1行）
-- **来週は JOIN/集計 のドリルを 3〜5問 追加し、各問に“1行の解釈（何を取り出しているか）”を必ず付ける。**
+- **次は JOIN / HAVING / 複数表の集計ドリルを 3〜5問 追加し、各問に“1行の解釈（何を取り出しているか）”を必ず付ける。**
 
 ---
 
@@ -51,12 +51,13 @@ SQL・分析・（必要に応じて）Web実装までを **「成果物 + 改�
 ## 成果物（採用担当が見る場所）
 | Category | Title | 内容 | Link |
 |---|---|---|---|
-| SQL Drills | 2026-02 drills | 5問（SELECT/AS / WHERE/ORDER BY / IN/BETWEEN / LIKE/NULL / DISTINCT/LIMIT） | [sql/drills/2026-02/](sql/drills/2026-02/) |
+| SQL Drills | 2026-02 drills | 6問（SELECT/AS / WHERE/ORDER BY / IN/BETWEEN / LIKE/NULL / DISTINCT/LIMIT / GROUP BY/COUNT） | [sql/drills/2026-02/](sql/drills/2026-02/) |
 | SQL Drill | q001_select_alias.sql | SELECT + AS（別名） | [sql/drills/2026-02/q001_select_alias.sql](sql/drills/2026-02/q001_select_alias.sql) |
 | SQL Drill | q002_where_orderby.sql | WHERE + ORDER BY（複数キー） | [sql/drills/2026-02/q002_where_orderby.sql](sql/drills/2026-02/q002_where_orderby.sql) |
 | SQL Drill | q003_in_between.sql | IN + BETWEEN（複数候補/範囲） | [sql/drills/2026-02/q003_in_between.sql](sql/drills/2026-02/q003_in_between.sql) |
 | SQL Drill | q004_like_null.sql | LIKE + NULL判定（前方一致/IS NULL） | [sql/drills/2026-02/q004_like_null.sql](sql/drills/2026-02/q004_like_null.sql) |
 | SQL Drill | q005_distinct_limit.sql | DISTINCT + LIMIT（重複排除/先頭N件） | [sql/drills/2026-02/q005_distinct_limit.sql](sql/drills/2026-02/q005_distinct_limit.sql) |
+| SQL Drill | q006_groupby_count.sql | GROUP BY + COUNT（都道府県ごとの件数集計） | [sql/drills/2026-02/q006_groupby_count.sql](sql/drills/2026-02/q006_groupby_count.sql) |
 | Analysis | （準備中） | ファネル/継続率などのミニ分析 | [analysis/](analysis/) |
 | Web | （準備中） | 最小限の可視化/アプリ | [web/](web/) |
 | Notes | 学習メモ | 設計/学びの蓄積 | [notes/](notes/) |
@@ -92,13 +93,14 @@ SQL・分析・（必要に応じて）Web実装までを **「成果物 + 改�
 
 ## 今週やったこと／学び／次週やること（2026-02-16〜2026-02-22）
 
-- **今週やったこと**：SQL drills を 5問（q001〜q005）作成し、フォルダ構成と README（成果物テーブル＋更新ログ）まで整備した
+- **今週やったこと**：SQL drills を 6問（q001〜q006）作成し、フォルダ構成と README（成果物テーブル＋更新ログ）まで整備した
 - **学び**：`IN / BETWEEN` と `LIKE / IS NULL` の基本に加えて、**「学習＝GitHubで再現できる形（リンク＋ログ）にする」**と後で振り返りやすい
-- **次週やること**：JOIN/集計（GROUP BY, HAVING）に進み、同じ型で 3〜5問を追加する（各問に“解釈1行”を添える）
+- **次週やること**：JOIN/HAVING に進み、同じ型で 3〜5問を追加する（各問に“解釈1行”を添える）
 
 ---
 
 ## 更新ログ
+- 2026-02-25: SQL drills（2026-02）に q006 を追加（GROUP BY/COUNT）
 - 2026-02-25: SQL drills（2026-02）に q005 を追加（DISTINCT/LIMIT）
 - 2026-02-22: SQL drills（2026-02）に q003〜q004 を追加（IN/BETWEEN, LIKE/NULL）
 - 2026-02-17: リポジトリ作成、README初版作成
