@@ -20,10 +20,10 @@ SQL・分析・（必要に応じて）Web実装までを **「成果物 + 改�
 - **分析（準備中）**：[`analysis/`](analysis/)
 
 ## 結論（1行）
-- **「SQLを“成果物化（README＋ログ）”しながら、JOIN/HAVING を含む集計ドリルまで積み上げられた。次は複数条件の集計と“1行解釈”を強化する。**
+- **「SQLを“成果物化（README＋ログ）”しながら、JOIN/HAVING に加えて MIN/MAX と多対多の INNER JOIN まで積み上げられた。次は条件付き集計と JOIN の精度をさらに高める。**
 
 ## 次のアクション（1行）
-- **次は WHERE + JOIN + HAVING を組み合わせた条件付き集計を追加し、各問に“1行の解釈（何を取り出しているか）”を必ず付ける。**
+- **次は WHERE + JOIN + HAVING を組み合わせた条件付き集計や LEFT JOIN を追加し、各問に“1行の解釈（何を取り出しているか）”を必ず付ける。**
 
 ---
 
@@ -51,7 +51,7 @@ SQL・分析・（必要に応じて）Web実装までを **「成果物 + 改�
 ## 成果物（採用担当が見る場所）
 | Category | Title | 内容 | Link |
 |---|---|---|---|
-| SQL Drills | 2026-02 drills | 8問（SELECT/AS / WHERE/ORDER BY / IN/BETWEEN / LIKE/NULL / DISTINCT/LIMIT / GROUP BY/COUNT / JOIN/AVG / HAVING） | [sql/drills/2026-02/](sql/drills/2026-02/) |
+| SQL Drills | 2026-02 drills | 10問（SELECT/AS / WHERE/ORDER BY / IN/BETWEEN / LIKE/NULL / DISTINCT/LIMIT / GROUP BY/COUNT / JOIN/AVG / HAVING / GROUP BY+MIN/MAX / INNER JOIN） | [sql/drills/2026-02/](sql/drills/2026-02/) |
 | SQL Drill | q001_select_alias.sql | SELECT + AS（別名） | [sql/drills/2026-02/q001_select_alias.sql](sql/drills/2026-02/q001_select_alias.sql) |
 | SQL Drill | q002_where_orderby.sql | WHERE + ORDER BY（複数キー） | [sql/drills/2026-02/q002_where_orderby.sql](sql/drills/2026-02/q002_where_orderby.sql) |
 | SQL Drill | q003_in_between.sql | IN + BETWEEN（複数候補/範囲） | [sql/drills/2026-02/q003_in_between.sql](sql/drills/2026-02/q003_in_between.sql) |
@@ -60,6 +60,8 @@ SQL・分析・（必要に応じて）Web実装までを **「成果物 + 改�
 | SQL Drill | q006_groupby_count.sql | GROUP BY + COUNT（都道府県ごとの件数集計） | [sql/drills/2026-02/q006_groupby_count.sql](sql/drills/2026-02/q006_groupby_count.sql) |
 | SQL Drill | q007_join_avg.sql | JOIN + AVG（複数表の平均点集計） | [sql/drills/2026-02/q007_join_avg.sql](sql/drills/2026-02/q007_join_avg.sql) |
 | SQL Drill | q008_having_avg.sql | HAVING（集計後の条件抽出） | [sql/drills/2026-02/q008_having_avg.sql](sql/drills/2026-02/q008_having_avg.sql) |
+| SQL Drill | q009_groupby_minmax.sql | GROUP BY + MIN / MAX（学年ごとの最小・最大誕生日） | [sql/drills/2026-02/q009_groupby_minmax.sql](sql/drills/2026-02/q009_groupby_minmax.sql) |
+| SQL Drill | q010_inner_join_mtm.sql | INNER JOIN（多対多の基本・文化部の所属者抽出） | [sql/drills/2026-02/q010_inner_join_mtm.sql](sql/drills/2026-02/q010_inner_join_mtm.sql) |
 | Analysis | （準備中） | ファネル/継続率などのミニ分析 | [analysis/](analysis/) |
 | Web | （準備中） | 最小限の可視化/アプリ | [web/](web/) |
 | Notes | 学習メモ | 設計/学びの蓄積 | [notes/](notes/) |
@@ -102,6 +104,7 @@ SQL・分析・（必要に応じて）Web実装までを **「成果物 + 改�
 ---
 
 ## 更新ログ
+- 2026-02-27: SQL drills（2026-02）に q009〜q010 を追加（GROUP BY/MIN/MAX, INNER JOIN）
 - 2026-02-26: SQL drills（2026-02）に q007〜q008 を追加（JOIN/AVG, HAVING）
 - 2026-02-25: SQL drills（2026-02）に q006 を追加（GROUP BY/COUNT）
 - 2026-02-25: SQL drills（2026-02）に q005 を追加（DISTINCT/LIMIT）

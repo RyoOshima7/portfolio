@@ -25,3 +25,5 @@ SQLの基礎〜実務で頻出のパターンを、**1問 = 1ファイル**で�
 - `q006_groupby_count.sql` : GROUP BY / COUNT（都道府県ごとの件数集計）
 - `q007_join_avg.sql` : JOIN / AVG（複数表の平均点集計）
 - `q008_having_avg.sql` : HAVING / AVG（集計後の条件抽出）
+- `q009_groupby_minmax.sql` : GROUP BY / MIN / MAX（学年ごとの最小・最大誕生日）
+- `q010_inner_join_mtm.sql` : INNER JOIN（多対多の基本・文化部の所属者抽出）
