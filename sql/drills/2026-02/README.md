@@ -10,3 +10,4 @@
 - `q008_having_avg.sql` : HAVING / AVG（集計後の条件抽出）
 - `q009_groupby_minmax.sql` : GROUP BY / MIN / MAX（学年ごとの最小・最大誕生日）
 - `q010_inner_join_mtm.sql` : INNER JOIN（多対多の基本・文化部の所属者抽出）
+- `q011_count_distinct_left_join.sql` : COUNT(DISTINCT) / LEFT JOIN（所属0件を含む部活数集計）
