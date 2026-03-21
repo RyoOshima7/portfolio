@@ -111,6 +111,7 @@
 
 **今月のゴール（1〜3個）**
 - ID05：Python基礎を“分析用に必要な範囲”まで拡張（関数/例外/ファイル）
+- ID05.2：Excel / スプレッドシート基礎導入（CSV/並び替え/基本関数）→分析前の確認を型化
 
 **やること（タスク）**
 
@@ -121,7 +122,10 @@
   - 完了条件（Done）：GitHubにPython/Notebookの成果物10本が揃い、実行手順と結果がREADMEで確認できる。
 
 ### 優先度B
-- （なし）
+- **ID05.2 スプレッドシート**：Excel / スプレッドシート基礎導入（CSV/並び替え/基本関数）→分析前の確認を型化 — 10.0h
+  - 何をする：CSVを開く→列名/型/空白を確認→フィルタ/並び替え→SUM/AVERAGE/COUNT/COUNTA/IF を使って小さく集計→見やすい表に整える。
+  - 成果物（Proof）：GitHub：spreadsheet_drills_202604（q001〜q003：raw_data.csv / summary.xlsx / README / スクショ）
+  - 完了条件（Done）：公開CSVを見て「まず何を確認するか」を自分の手順で説明でき、GitHubで再現できる。
 
 ### 優先度C（毎月の運用タスク）
 - 数学/前提（統計のため）：通学中 **15分/日**＋週末 **30〜60分** で「関数・指数対数・確率（場合の数/確率）」を固める（6〜7月の統計で詰まらないため）。
@@ -143,6 +147,7 @@
 
 **今月のゴール（1〜3個）**
 - ID06：Pythonデータ分析①（pandas/numpy）→EDAテンプレ化
+- ID06.2：Excel / スプレッドシート実務基礎（ピボット/XLOOKUP/条件付き書式/基本グラフ）→EDA補助
 - ID6.5：BigQueryスターター：CSV→BigQuery→VIEW→SQLクエリ集（無料枠でOK）
 
 **やること（タスク）**
@@ -159,6 +164,10 @@
   - 完了条件（Done）：Proofがリンクで提示でき、第三者が内容を確認できる（README/説明文つき）。
 
 ### 優先度B
+- **ID06.2 スプレッドシート**：Excel / スプレッドシート実務基礎（ピボット/XLOOKUP/条件付き書式/基本グラフ）→EDA補助 — 18.0h
+  - 何をする：公開CSVをスプレッドシートで開く→ピボットでカテゴリ別/日別に集計→XLOOKUP か VLOOKUP で補助表を参照→条件付き書式で異常値候補を可視化→棒グラフ/折れ線グラフを1枚作る。
+  - 成果物（Proof）：GitHub：spreadsheet_drills_202605（q004〜q008：raw_data.csv / cleaned_data.csv / summary.xlsx / README / スクショ）
+  - 完了条件（Done）：EDA前にスプレッドシートで「確認→簡易集計→見せる」ができ、Python結果と照合できる。
 - **ID6.5 DWH/クラウド**：BigQueryスターター：CSV→BigQuery→VIEW→SQLクエリ集（無料枠でOK） — 8.0h
   - 何をする：①BigQueryプロジェクト作成→②公開CSVをロード→③日付/IDの型を整える→④VIEWを1つ作る（例：daily_active_accounts）→⑤SQLクエリを5本だけ残す。
   - 成果物（Proof）：手順README＋SQLクエリ集＋スクショ（テーブル/VIEW/実行結果）
@@ -187,6 +196,7 @@
 - ID06：Pythonデータ分析①（pandas/numpy）→EDAテンプレ化
 - ID6.5：BigQueryスターター：CSV→BigQuery→VIEW→SQLクエリ集（無料枠でOK）
 - ID6.6：BIスターター：Looker StudioでBigQueryのVIEWを接続→ダッシュボードv0
+- ID6.7：Excel / スプレッドシートでKPI表・集計表・グラフ1枚を作成→BI前の下書きを残す
 
 **やること（タスク）**
 
@@ -209,6 +219,10 @@
   - 何をする：①BigQueryのVIEWを接続→②KPIカード（2〜3個）＋推移グラフ（1〜2本）＋フィルタ（プラン等）→③“この数字で何を判断するか”を1行メモ。
   - 成果物（Proof）：ダッシュボードURL（またはPDF/スクショ）＋接続手順README
   - 完了条件（Done）：第三者が見て「KPI→判断」が分かる（KPI定義＋1行メモつき）。
+- **ID6.7 スプレッドシート**：Excel / スプレッドシートでKPI表・集計表・グラフ1枚を作成→BI前の下書きを残す — 12.0h
+  - 何をする：指標名/定義/式/見る目的を1枚に整理→月次/週次の集計表を作る→グラフを1枚作る→「この数字で何を判断するか」を1行コメントで残す。
+  - 成果物（Proof）：GitHub：kpi_sheet_v0（summary.xlsx / KPI定義シート / chart.png / README）
+  - 完了条件（Done）：Looker Studioへ進む前に、スプレッドシートだけで「数字→判断→次の一手」の下書きが見える。
 
 ### 優先度C（毎月の運用タスク）
 - Proof整備：週1で「リンク集＋結論1行＋次のアクション1行」を更新（Notion/GitHub）。
