@@ -10,3 +10,4 @@
 - `q019_having_multiple_clubs.sql` : HAVING / COUNT(DISTINCT)（2つ以上の部活に所属している学生の抽出）
 - `q020_correlated_subquery_grade_avg.sql` : 相関サブクエリ / AVG（自分の平均点と学年平均の比較）
 - `q021_case_pass_fail_count.sql` : CASE / SUM / 条件付き集計（科目ごとの合格人数・不合格人数集計）
+- `q022_case_rank_by_avg.sql` : CASE / AVG / GROUP BY（学生ごとの平均点とランク付け）
