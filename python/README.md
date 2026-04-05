@@ -2,7 +2,10 @@
 
 分析に必要な範囲に絞って、**小さく作って積む** フォルダです。
 
-- `basics/`：関数 / 例外 / ファイル入出力 など
+- `basics/`：関数 / 例外 / ファイル入出力 / CSV読み込み など
 - `data_analysis/`：pandas / 可視化 / 簡易ETL など
 
 各テーマは、`README.md`（目的/手順/学び）を必ず付けます。
+
+## 現在の追加内容
+- [`basics/q001_sales_total/`](basics/q001_sales_total/)：CSVの総売上計算（関数・for文・DictReader・例外処理）
