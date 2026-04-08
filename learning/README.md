@@ -6,3 +6,4 @@
 - `math/`
 - `statistics/`
 - `fe_exam/`（基本情報など、学びを“型”として残す）
+- `spreadsheets/`（表計算・集計の基礎を、課題ごとにProofとして残す）

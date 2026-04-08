@@ -1,0 +1,9 @@
+order_id,date,region,product,quantity,unit_price,sales,note
+1,2026-04-01,East,Apple,3,120,360,
+2,2026-04-01,West,Banana,5,80,400,sale
+3,2026-04-02,East,Orange,4,100,400,
+4,2026-04-02,North,Apple,2,120,240,
+5,2026-04-03,South,Grape,1,300,300,gift
+6,2026-04-03,East,Banana,6,80,480,
+7,2026-04-04,West,Orange,2,100,200,
+8,2026-04-04,South,Apple,,120,,missing quantity
