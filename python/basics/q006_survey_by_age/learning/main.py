@@ -28,7 +28,7 @@ def summarize_by_age(file_path):
             # 初めて出てきた年代なら0で初期化
             if age_group not in age_totals:
                 age_totals[age_group] = 0
-                age_counts[age_group] = 
+                age_counts[age_group] = 0
                 
             # 合計と件数を更新
             age_totals[age_group] += score
