@@ -12,3 +12,4 @@
 - [`q001_csv_check/`](q001_csv_check/)：列名・想定型・空白セル数を確認する
 - [`q002_filter_sort_functions/`](q002_filter_sort_functions/)：フィルタ・並び替え・基本関数で集計する
 - [`q003_if_and_summary/`](q003_if_and_summary/)：IFで判定列を作り、COUNTIF / COUNTIFSで集計する
+- [`excel-roadmap-q001-q010/`](excel-roadmap-q001-q010/)：売上計算、基本集計、条件付き集計、IF判定の基礎を学ぶ
