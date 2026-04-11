@@ -13,3 +13,5 @@
 - [`basics/q003_user_event_count/`](basics/q003_user_event_count/)：ユーザー行動ログのイベント件数集計（辞書・条件分岐・関数・CSV読み込み）
 - [`basics/q004_conversion_rate/`](basics/q004_conversion_rate/)：コンバージョン率計算（関数・条件分岐・CSV読み込み・割合計算・例外処理）
 - [`basics/q005_survey_average/`](basics/q005_survey_average/)：アンケート満足度平均の計算（関数・条件分岐・CSV読み込み・平均計算・例外処理）
+- [`basics/q006_survey_by_age/`](basics/q006_survey_by_age/)：年代別の満足度平均を計算（辞書・集計・CSV読み込み・平均計算・例外処理）
+- [`basics/q007_inventory_total/`](basics/q007_inventory_total/)：在庫一覧と合計金額の表示（リスト・for文・関数・計算）
