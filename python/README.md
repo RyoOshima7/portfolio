@@ -16,3 +16,10 @@
 - [`basics/q006_survey_by_age/`](basics/q006_survey_by_age/)：年代別の満足度平均を計算（辞書・集計・CSV読み込み・平均計算・例外処理）
 - [`basics/q007_inventory_total/`](basics/q007_inventory_total/)：在庫一覧と合計金額の表示（リスト・for文・関数・計算）
 - [`basics/q008_inventory_order/`](basics/q008_inventory_order/)：在庫・注文管理CLI（input・if文・関数・例外処理・在庫更新）
+
+
+## 学習の見方
+- `learning/`：自力で取り組む途中版
+- `completed/`：完成版
+- `docs/`：課題文・要件
+- `data/`：CSVなどの入力データ（ある場合）
