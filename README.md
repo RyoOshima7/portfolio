@@ -1,128 +1,178 @@
 # Portfolio
 
-BtoB SaaS領域の **データアナリスト / プロダクトアナリスト** を目指し、  
-SQL・分析・（必要に応じて）Web実装までを **「成果物 + 改善履歴」** として残すリポジトリです。
+BtoB SaaS領域の **データアナリスト / プロダクトアナリスト** を目指して、
+学習内容を **「何を作ったか」「何を学んだか」「次に何を伸ばすか」** が分かる形で整理したポートフォリオです。
+
+このリポジトリでは、SQL・Python・スプレッドシート・分析の基礎学習を、
+**成果物 + README + 学習ログ** として積み上げています。
 
 ---
 
-## Highlights（30秒で分かること）
-- **SQL Drills**：問題定義 → 実装 → 振り返り（learnings）を **1問1ファイル** で継続蓄積（`sql/drills/`）
-- **分析の土台づくり**：集計・JOIN・サブクエリ・相関サブクエリ・CASE集計まで段階的に拡張
-- **継続運用**：READMEと更新ログを残し、学習の量だけでなく **積み上げ方** も見える形に整理
+## このリポジトリで分かること
+- SQL、Python、Excelの基礎をどこまで学習したか
+- 各課題で **何を目的に取り組み、何を使い、何を学んだか**
+- 今後どの分野を伸ばして、実務に近い成果物へつなげる予定か
 
 ---
 
-## リンク集（Proofの入口）
-- **SQL Drills（最新）**：[`sql/drills/2026-04/`](sql/drills/2026-04/)
-- **SQL Drills（一覧）**：[`sql/drills/`](sql/drills/)
-- **Python Basics（最新）**：[`python/basics/q008_inventory_order/`](python/basics/q008_inventory_order/)
-- **ロードマップ原本**：[`roadmap/`](roadmap/)
-- **学習メモ（Notes）**：[`notes/`](notes/)
-- **分析（準備中）**：[`analysis/`](analysis/)
+## まず見てほしい場所
+初めて見る方は、以下の順番で読むと全体像を把握しやすいです。
 
-## 結論（1行）
-- **SQL drills に加えて、Pythonでは q001〜q008 を追加し、CSV読み込み・関数・条件分岐・辞書・平均計算・在庫計算・注文処理まで基礎課題を成果物化できた。**
-
-## 次のアクション（1行）
-- **次は Python基礎課題を継続追加しつつ、各課題の README を「目的 / 使う内容 / 実行例」でそろえて見やすさを高める。**
-
----
-
-## Roadmapとの対応（Proofを増やす設計）
-- ロードマップ原本：[`roadmap/`](roadmap/)（master / monthly plan / gantt）
-- 方針：ロードマップの **各IDのProofを、GitHub内のリンクで提示できる形** にしていきます。
-
-| ロードマップカテゴリ | GitHubの置き場所 | 代表的なProof |
-|---|---|---|
-| 資格：基本情報 | `learning/fe_exam/` | 弱点TOP10＋型＋改善ログ |
-| 数学/前提 | `learning/math/` | まとめ＋例題（手計算→Python再現） |
-| SQL | `sql/drills/` | 問題→解答→解説（learnings） |
-| Python | `python/` | 小課題＋README（目的/手順/学び） |
-| 統計/検定・A/B | `analysis/ab_testing/` + `learning/statistics/` | 1枚説明メモ＋演習 |
-| 統計/因果 | `analysis/causal_inference/` | 用語整理＋ミニ演習＋1枚 |
-| プロダクト/分析 | `analysis/product_analytics/` | ファネル/継続/解約のミニPJ |
-| BI/可視化 | `bi/` | ダッシュボード設計＋指標定義 |
-| データモデリング | `dwh/modeling/` | 粒度設計＋図＋期待クエリ |
-| データ品質 | `data_quality/` | テスト例＋再発防止メモ |
-| 実務/案件・インターン | `work/case_studies/` | ケーススタディ（公開/架空データ） |
-| 就活 | `career/` | 職務要約/STAR/企業研究 |
+1. **SQLの成果物**
+   - [`sql/drills/2026-04/`](sql/drills/2026-04/)
+   - [`sql/drills/`](sql/drills/)
+2. **Pythonの成果物**
+   - [`python/basics/q010_flask_summary_app/`](python/basics/q010_flask_summary_app/)
+   - [`python/basics/`](python/basics/)
+3. **Excelの学習成果**
+   - [`learning/spreadsheets/excel-roadmap-q011-q020/`](learning/spreadsheets/excel-roadmap-q011-q020/)
+4. **中長期の学習計画**
+   - [`roadmap/`](roadmap/)
 
 ---
 
-## 成果物（採用担当が見る場所）
-| Category | Title | 内容 | Link |
-|---|---|---|---|
-| SQL Drills | 2026-02 drills | q001〜q012（SELECT / WHERE / IN / LIKE / DISTINCT / GROUP BY / JOIN / HAVING / MIN/MAX / LEFT JOIN） | [sql/drills/2026-02/](sql/drills/2026-02/) |
-| SQL Drills | 2026-03 drills | q013〜q022（LEFT JOIN / 3テーブルJOIN / サブクエリ / EXISTS / 相関サブクエリ / CASE集計 / CASEランク付け） | [sql/drills/2026-03/](sql/drills/2026-03/) |
-| SQL Drill | q019_having_multiple_clubs.sql | HAVING + COUNT(DISTINCT)（2つ以上の部活に所属している学生の抽出） | [sql/drills/2026-03/q019_having_multiple_clubs.sql](sql/drills/2026-03/q019_having_multiple_clubs.sql) |
-| SQL Drill | q020_correlated_subquery_grade_avg.sql | 相関サブクエリ + AVG（自分の平均点と学年平均の比較） | [sql/drills/2026-03/q020_correlated_subquery_grade_avg.sql](sql/drills/2026-03/q020_correlated_subquery_grade_avg.sql) |
-| SQL Drill | q021_case_pass_fail_count.sql | CASE + SUM（科目ごとの合格人数・不合格人数集計） | [sql/drills/2026-03/q021_case_pass_fail_count.sql](sql/drills/2026-03/q021_case_pass_fail_count.sql) |
-| SQL Drill | q022_case_rank_by_avg.sql | CASE + AVG（学生ごとの平均点とランク付け） | [sql/drills/2026-03/q022_case_rank_by_avg.sql](sql/drills/2026-03/q022_case_rank_by_avg.sql) |
-| Python Basics | q001_sales_total | CSV読み込み + DictReader + 関数 + 例外処理で総売上を計算 | [python/basics/q001_sales_total/](python/basics/q001_sales_total/) |
-| Python Basics | q005_survey_average | CSV読み込み + DictReader + 関数 + 条件分岐 + 平均計算 + 例外処理で満足度平均を計算 | [python/basics/q005_survey_average/](python/basics/q005_survey_average/) |
-| Python Basics | q006_survey_by_age | 年代別に満足度を集計し、平均を計算 | [python/basics/q006_survey_by_age/](python/basics/q006_survey_by_age/) |
-| Python Basics | q007_inventory_total | 商品一覧を表示し、単価×在庫数で合計在庫金額を計算 | [python/basics/q007_inventory_total/](python/basics/q007_inventory_total/) |
-| Python Basics | q008_inventory_order | 商品名と注文数を受け取り、在庫確認・在庫更新・合計金額計算を行う | [python/basics/q008_inventory_order/](python/basics/q008_inventory_order/) |
-| Analysis | （準備中） | ファネル / 継続率 / 解約率などのミニ分析 | [analysis/](analysis/) |
-| Web | （準備中） | 最小限の可視化 / アプリ | [web/](web/) |
-| Notes | 学習メモ | 設計 / 学びの蓄積 | [notes/](notes/) |
+## おすすめ閲覧順
+「何ができるか」→「どう学んだか」→「今後どう伸ばすか」の順で見ると、理解しやすいです。
+
+1. **ルート README**
+   - このポートフォリオ全体の目的と構成を把握できます。
+2. **SQLの成果物**
+   - [`sql/drills/2026-04/`](sql/drills/2026-04/)
+   - 比較的新しい学習内容から、SQLの到達度を確認できます。
+3. **Pythonの成果物**
+   - [`python/basics/q010_flask_summary_app/`](python/basics/q010_flask_summary_app/)
+   - 基礎課題から簡単なWebアプリまでの流れを確認できます。
+4. **Excelの成果物**
+   - [`learning/spreadsheets/excel-roadmap-q011-q020/`](learning/spreadsheets/excel-roadmap-q011-q020/)
+   - 関数・参照・ピボットテーブルなどの基礎学習を確認できます。
+5. **ロードマップ**
+   - [`roadmap/`](roadmap/)
+   - 今後どのように実務レベルへ近づけるかの計画を確認できます。
+
+---
+
+## 代表的な成果物
+
+### SQL
+- [`sql/drills/2026-02/`](sql/drills/2026-02/)
+  - SELECT、WHERE、GROUP BY、JOIN などの基礎
+- [`sql/drills/2026-03/`](sql/drills/2026-03/)
+  - サブクエリ、EXISTS、CASE、相関サブクエリなど
+- [`sql/drills/2026-04/`](sql/drills/2026-04/)
+  - 日付関数、文字列関数、ウィンドウ関数、要約集計など
+
+### Python
+- [`python/basics/q001_sales_total/`](python/basics/q001_sales_total/)
+  - CSV読み込み、関数、例外処理の基礎
+- [`python/basics/q005_survey_average/`](python/basics/q005_survey_average/)
+  - 条件分岐と平均計算
+- [`python/basics/q008_inventory_order/`](python/basics/q008_inventory_order/)
+  - 在庫確認、更新、注文処理
+- [`python/basics/q009_file_error_handling/`](python/basics/q009_file_error_handling/)
+  - ファイル読み込み時のエラー処理
+- [`python/basics/q010_flask_summary_app/`](python/basics/q010_flask_summary_app/)
+  - Flaskを使った簡単なWebアプリ
+
+### Spreadsheets / Excel
+- [`learning/spreadsheets/excel-roadmap-q001-q010/`](learning/spreadsheets/excel-roadmap-q001-q010/)
+  - 基本関数、表操作の基礎
+- [`learning/spreadsheets/excel-roadmap-q011-q020/`](learning/spreadsheets/excel-roadmap-q011-q020/)
+  - IF、VLOOKUP、ピボットテーブルなど
 
 ---
 
 ## リポジトリ構成
-- `sql/`：SQLドリル・分析用クエリ
-- `python/`：Python基礎課題・データ処理の練習
-- `analysis/`：分析ミニプロジェクト（問い / 仮説 / 指標 / 結果 / 示唆）
-- `web/`：簡易アプリ・UI（必要な範囲で）
-- `notes/`：学習メモ、設計メモ、振り返り
+```text
+portfolio/
+├─ sql/                  # SQLドリル
+├─ python/               # Python基礎課題・データ処理
+├─ learning/             # 試験・数学・スプレッドシート学習
+├─ analysis/             # 分析メモ・分析ミニプロジェクト
+├─ bi/                   # ダッシュボード・計測設計
+├─ dwh/                  # データモデリング・dbt学習
+├─ data_quality/         # データ品質・テスト観点
+├─ roadmap/              # 学習計画・月次計画
+├─ career/               # 就活用メモ・面接準備
+├─ notes/                # 学習メモ・振り返り
+├─ web/                  # Web実装関連
+└─ work/                 # ケーススタディ
+```
 
 ---
 
-## 技術スタック
-### 現在
-- SQL
-- Git / GitHub
-
-### 今後（必要に応じて）
-- Python（データ処理）
-- Flask（簡易Web）
-- HTML / CSS / JavaScript（可視化 / UI）
-
----
-
-## 次に追加する予定（短期）
-- `analysis/` に **分析ミニPJ** を1本追加（問い→仮説→指標→検証→示唆）
-- SQL drills を「問い→SQL→解釈→学び」まで一段強くする
-- 各成果物フォルダの README を「目的 / 手順 / 学び」で統一する
+## 各フォルダの見方
+- **README.md**
+  - そのフォルダで何に取り組んでいるかを説明
+- **docs/**
+  - 問題文や要件
+- **learning/**
+  - 学習途中のコードや試行錯誤
+- **completed/**
+  - 完成版コード
+- **notes/**
+  - 学んだこと、つまずいたこと、改善点
+- **workbook/**
+  - Excelファイル本体
 
 ---
 
-## 今週やったこと／学び／次週やること（2026-03-16〜2026-03-22）
+## このポートフォリオの目的
+このリポジトリの目的は、単に課題を保存することではなく、
+**「基礎を理解しながら継続的に改善していること」を第三者に伝えること**です。
 
-- **今週やったこと**：SQL drills を q019〜q022 まで追加し、HAVING・相関サブクエリ・CASEを使った条件付き集計とランク付けまで拡張した
-- **学び**：単純な抽出だけでなく、**「集計後に絞る」「自分の行に応じて比較先を変える」「条件ごとに件数を分ける」「集計結果を区分で表現する」** といった実務で頻出の考え方が見えてきた
-- **次週やること**：CASE / HAVING / 相関サブクエリの違いを1行で説明できるよう整理し、各SQLに「どんな場面で使うか」の観点を足す
+そのため、できるだけ以下が分かる形を目指しています。
+- 何のための課題か
+- どの技術を使っているか
+- どこまでできるようになったか
+- 次に何を強化する予定か
+
+---
+
+## 現在の学習範囲
+### 学習済み
+- SQL基礎〜中級手前
+  - SELECT / WHERE / GROUP BY / JOIN / HAVING / サブクエリ / EXISTS / CASE / ウィンドウ関数
+- Python基礎
+  - 変数、条件分岐、繰り返し、関数、リスト、辞書、CSV読み込み、例外処理、簡単なFlaskアプリ
+- Excel基礎
+  - IF、VLOOKUP、ピボットテーブルなど
+
+### 今後強化したい内容
+- Pythonでのデータ分析処理
+- 分析ミニプロジェクトの追加
+- BI / ダッシュボード設計
+- 仮説設定 → 指標設計 → 集計 → 示唆出し の一連の流れ
+
+---
+
+## 採用担当者の方へ
+このリポジトリでは、派手な成果物よりも、まずは **基礎を着実に積み上げている過程** を見える形にすることを重視しています。
+
+特に以下を見ていただくと、学習の進め方が分かりやすいです。
+- SQL: [`sql/drills/`](sql/drills/)
+- Python: [`python/basics/`](python/basics/)
+- Excel: [`learning/spreadsheets/`](learning/spreadsheets/)
+- Roadmap: [`roadmap/`](roadmap/)
+
+---
+
+## 次のアクション
+- 各成果物フォルダの README を **「目的 / 使用技術 / 実行方法 / 学び」** の形式に統一する
+- `analysis/` に分析ミニプロジェクトを追加する
+- Pythonでデータ分析寄りの課題を増やす
+- GitHub上で、初見の人でも追いやすい導線にさらに改善する
 
 ---
 
 ## 更新ログ
-- 2026-04-10: `python/basics/q006_survey_by_age` を追加（辞書, 集計, CSV読み込み, 平均計算, 例外処理）
-- 2026-04-11: `python/basics/q007_inventory_total` を追加（リスト, for文, 関数, 計算）
-- 2026-04-13: ルート README を更新（最新リンク / Python成果物 / 結論 / 次のアクションを最新化）
-- 2026-04-13: `python/basics/q008_inventory_order` を追加（input, if文, while文, 関数, 例外処理, 在庫更新）
-- 2026-04-09: `python/basics/q005_survey_average` を追加（CSV読み込み, DictReader, 関数, 条件分岐, 平均計算, 例外処理）
-- 2026-04-05: `python/basics/q001_sales_total` を追加（CSV読み込み, DictReader, 関数, for文, 例外処理）
-- 2026-04-05: Python README / Basics README / ルート README を更新
-- 2026-03-22: ルート README を現在の学習状況に合わせて更新（最新リンク / 成果物 / 学び / 更新ログを修正）
-- 2026-03-30: SQL drills（2026-03）に q022 を追加（CASE, AVG, GROUP BY によるランク付け）
-- 2026-03-22: SQL drills（2026-03）に q019〜q021 を追加（HAVING, 相関サブクエリ, CASE集計）
-- 2026-03-21: SQL drills（2026-03）に q017〜q018 を追加（EXISTS, LEFT JOIN / IS NULL）
-- 2026-03-21: SQL drills（2026-03）に q015〜q016 を追加（サブクエリ, MAX, 相関サブクエリ）
-- 2026-03-12: SQL drills（2026-03）に q013〜q014 を追加（LEFT JOIN, 3テーブルJOIN）
-- 2026-02-28: SQL drills（2026-02）に q011〜q012 を追加（COUNT(DISTINCT), LEFT JOIN, JOIN / COUNT）
-- 2026-02-27: SQL drills（2026-02）に q009〜q010 を追加（GROUP BY/MIN/MAX, INNER JOIN）
-- 2026-02-26: SQL drills（2026-02）に q007〜q008 を追加（JOIN/AVG, HAVING）
-- 2026-02-25: SQL drills（2026-02）に q005〜q006 を追加（DISTINCT/LIMIT, GROUP BY/COUNT）
-- 2026-02-22: SQL drills（2026-02）に q003〜q004 を追加（IN/BETWEEN, LIKE/NULL）
-- 2026-02-17: リポジトリ作成、README初版作成
-- 2026-02-17: SQL drills（2026-02）に q001〜q002 を追加（SELECT/AS, WHERE/ORDER BY）
+- 2026-04-15: ルート README を全面見直し。成果物の説明、読み方、構成、導線を改善
+- 2026-04-15: `learning/spreadsheets/excel-roadmap-q011-q020/` を追加
+- 2026-04-15: `python/basics/q010_flask_summary_app/` を追加
+- 2026-04-14: `python/basics/q009_file_error_handling/` を追加
+- 2026-04-13: `python/basics/q008_inventory_order/` を追加
+- 2026-04-11: `python/basics/q007_inventory_total/` を追加
+- 2026-04-10: `python/basics/q006_survey_by_age/` を追加
+- 2026-04-09: `python/basics/q005_survey_average/` を追加
+- 2026-03-30: SQL drills（2026-04）を追加
+- 2026-03-22: SQL drills（2026-03）を追加
+- 2026-02-17: リポジトリ作成、SQL drills（2026-02）を追加

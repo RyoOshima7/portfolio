@@ -1,26 +1,15 @@
 # Basics
 
-Python基礎の小課題を、**learning → completed → docs → data** の形で残すフォルダです。
+## 目的
+Python基礎の小課題を、learning と completed を見比べながら理解することを目的としています。
 
-## 進め方
-- `learning/` を自力で埋める
-- `completed/` と見比べて差分を確認する
-- `docs/` を読んで、課題文と要件を説明できるようにする
+## 使用技術
+Python, CSV, 関数, 条件分岐, 例外処理
 
-## フォルダの見方
-- `learning/`：自力で解く用
-- `completed/`：完成版の答え
-- `docs/`：問題文と要件
-- `data/`：入力データ（ある課題のみ）
+## 実行方法
+1. 各課題フォルダの `learning/` を自力で埋めます。
+2. `completed/` と比較して差分を確認します。
+3. `docs/` と README を読み、何を学ぶ課題か説明できるようにします。
 
-## 課題一覧
-- [`q001_sales_total/`](q001_sales_total/)：CSVを読み込み、`quantity × unit_price` で総売上を計算する
-- [`q002_sales_by_product/`](q002_sales_by_product/)：商品ごとに売上を集計し、売上の大きい順に表示する
-- [`q003_user_event_count/`](q003_user_event_count/)：ユーザー行動ログを読み込み、イベントごとの件数を集計する
-- [`q004_conversion_rate/`](q004_conversion_rate/)：view を分母に click率・purchase率を計算する
-- [`q005_survey_average/`](q005_survey_average/)：アンケート満足度の平均を計算し、未入力は除外する
-- [`q006_survey_by_age/`](q006_survey_by_age/)：年代ごとに満足度を集計し、平均を計算する
-- [`q007_inventory_total/`](q007_inventory_total/)：商品一覧を表示し、単価×在庫数で合計在庫金額を計算する
-- [`q008_inventory_order/`](q008_inventory_order/)：商品名と注文数を受け取り、在庫を確認して注文後の在庫を更新する
-- [`q009_file_error_handling/`](q009_file_error_handling/)：CSVファイルを読み込み、ファイル未存在や不正な数値を例外処理で扱う
-- [`q010_flask_summary_app/`](q010_flask_summary_app/)：Flaskでフォーム入力を受け取り、集計結果を画面表示する
+## 学び
+- 自力で解いてから答えを比較すると、理解が深まりやすくなります。

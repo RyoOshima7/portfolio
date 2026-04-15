@@ -1,13 +1,27 @@
 # 2026-03 SQL Drills
 
-- `q013_left_join_zero_count.sql` : LEFT JOIN / COUNT（所属0人の部活も含む人数集計）
-- `q014_three_table_join_points.sql` : JOIN / WHERE / ORDER BY（学生ID=1の点数明細表示）
-- `q015_subquery_above_avg.sql` : サブクエリ / AVG / WHERE / ORDER BY（全体平均より高い点数の抽出）
-- `q016_subquery_subject_top_score.sql` : サブクエリ / MAX / 相関サブクエリ（科目ごとの最高点の学生一覧）
-- `q017_exists_under_60.sql` : EXISTS / 相関サブクエリ（60点未満が1科目でもある学生の抽出）
-- `q018_left_join_no_affiliation.sql` : LEFT JOIN / IS NULL（どの部活にも所属していない学生の抽出）
+## 目的
+その月に取り組んだSQL演習をまとめ、どの構文や考え方を練習したかを把握しやすくすることを目的としています。
 
-- `q019_having_multiple_clubs.sql` : HAVING / COUNT(DISTINCT)（2つ以上の部活に所属している学生の抽出）
-- `q020_correlated_subquery_grade_avg.sql` : 相関サブクエリ / AVG（自分の平均点と学年平均の比較）
-- `q021_case_pass_fail_count.sql` : CASE / SUM / 条件付き集計（科目ごとの合格人数・不合格人数集計）
-- `q022_case_rank_by_avg.sql` : CASE / AVG / GROUP BY（学生ごとの平均点とランク付け）
+## 使用技術
+SQL, SELECT, JOIN, 集計関数, サブクエリ, ウィンドウ関数, Markdown
+
+## 実行方法
+1. このフォルダ内の `.sql` ファイルを上から順に確認します。
+2. 各ファイルで、問題、解答SQL、Learnings を読みます。
+3. 似た構文や集計パターンを比較しながら復習します。
+
+## 学び
+- 1か月分をまとめて見ることで、どのSQLパターンを学習したかを整理しやすくなります。
+
+## 収録内容
+- `q013_left_join_zero_count.sql`
+- `q014_three_table_join_points.sql`
+- `q015_subquery_above_avg.sql`
+- `q016_subquery_subject_top_score.sql`
+- `q017_exists_under_60.sql`
+- `q018_left_join_no_affiliation.sql`
+- `q019_having_multiple_clubs.sql`
+- `q020_correlated_subquery_grade_avg.sql`
+- `q021_case_pass_fail_count.sql`
+- `q022_case_rank_by_avg.sql`
