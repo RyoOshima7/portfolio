@@ -10,3 +10,4 @@
 
 ## 課題一覧
 - [`excel-roadmap-q001-q010/`](excel-roadmap-q001-q010/)：売上計算、基本集計、条件付き集計、IF判定の基礎を学ぶ
+- [`excel-roadmap-q011-q020/`](excel-roadmap-q011-q020/)：VLOOKUP、絶対参照、条件付き集計、ピボットテーブルの基礎を学ぶ
