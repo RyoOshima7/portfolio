@@ -13,3 +13,7 @@ Markdown, 振り返り, 設計メモ
 
 ## 学び
 - メモを残すことで、同じミスの再発防止や説明力の向上につながります。
+
+
+## 学習ログ
+- [`2026-05-09_learning_log.md`](2026-05-09_learning_log.md)：SQL・Python・pandas・Excelの復習とpandas q001の学習記録

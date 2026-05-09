@@ -22,6 +22,7 @@ BtoB SaaS領域の **データアナリスト / プロダクトアナリスト**
    - [`sql/drills/2026-04/`](sql/drills/2026-04/)
    - [`sql/drills/`](sql/drills/)
 2. **Pythonの成果物**
+   - [`python/pandas/q001_read_csv_basic/`](python/pandas/q001_read_csv_basic/)
    - [`python/basics/q010_flask_summary_app/`](python/basics/q010_flask_summary_app/)
    - [`python/basics/`](python/basics/)
 3. **Excelの学習成果**
@@ -62,6 +63,8 @@ BtoB SaaS領域の **データアナリスト / プロダクトアナリスト**
   - 日付関数、文字列関数、ウィンドウ関数、要約集計など
 
 ### Python
+- [`python/pandas/q001_read_csv_basic/`](python/pandas/q001_read_csv_basic/)
+  - pandasによるCSV読み込み、データ確認の基礎
 - [`python/basics/q001_sales_total/`](python/basics/q001_sales_total/)
   - CSV読み込み、関数、例外処理の基礎
 - [`python/basics/q005_survey_average/`](python/basics/q005_survey_average/)
@@ -134,6 +137,8 @@ portfolio/
   - SELECT / WHERE / GROUP BY / JOIN / HAVING / サブクエリ / EXISTS / CASE / ウィンドウ関数
 - Python基礎
   - 変数、条件分岐、繰り返し、関数、リスト、辞書、CSV読み込み、例外処理、簡単なFlaskアプリ
+- pandas入門
+  - CSV読み込み、先頭行確認、列名確認、データ型確認、基本統計量確認
 - Excel基礎
   - IF、VLOOKUP、ピボットテーブルなど
 
@@ -150,7 +155,7 @@ portfolio/
 
 特に以下を見ていただくと、学習の進め方が分かりやすいです。
 - SQL: [`sql/drills/`](sql/drills/)
-- Python: [`python/basics/`](python/basics/)
+- Python: [`python/basics/`](python/basics/) / [`python/pandas/`](python/pandas/)
 - Excel: [`learning/spreadsheets/`](learning/spreadsheets/)
 - Roadmap: [`roadmap/`](roadmap/)
 
@@ -165,6 +170,8 @@ portfolio/
 ---
 
 ## 更新ログ
+- 2026-05-09: `python/pandas/q001_read_csv_basic/` を追加。pandasでCSV読み込みとデータ確認の基礎を学習
+- 2026-05-09: `notes/2026-05-09_learning_log.md` を追加。SQL・Python・pandas・Excelの学習ログを記録
 - 2026-04-15: ルート README を全面見直し。成果物の説明、読み方、構成、導線を改善
 - 2026-04-15: `learning/spreadsheets/excel-roadmap-q011-q020/` を追加
 - 2026-04-15: `python/basics/q010_flask_summary_app/` を追加
