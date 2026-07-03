@@ -74,7 +74,6 @@ ORDER BY p.subject_id, rnk, p.student_id;
 
 `RANK() OVER` を使うと、元の行を残したまま順位を追加できることを確認しました。
 
-
 また、`PARTITION BY` を使うことで、全体順位ではなく「科目ごとの順位」を付けられることを復習しました。
 
 ## 次にやること
