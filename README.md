@@ -16,43 +16,69 @@ BtoB SaaS領域の **データアナリスト / プロダクトアナリスト**
 ---
 
 ## まず見てほしい場所
-初めて見る方は、以下の順番で読むと全体像を把握しやすいです。
+初めて見る方は、**BtoB SaaSのデータ分析職でどう活かせるか** が分かりやすいように、以下の順番で読むことを想定しています。
 
-1. **SQLの成果物**
-   - [`sql/drills/2026-04/`](sql/drills/2026-04/)
-   - [`sql/drills/`](sql/drills/)
-2. **Pythonの成果物**
+1. **BtoB SaaS分析ミニ成果物**
+   - [`analysis/product_analytics/user_event_funnel_mini/`](analysis/product_analytics/user_event_funnel_mini/)
+   - ユーザー行動ログをもとに、イベント件数・CVR・改善仮説を整理しています。
+2. **Pythonによるログ集計・CVR計算**
+   - [`python/basics/q003_user_event_count/`](python/basics/q003_user_event_count/)
+   - [`python/basics/q004_conversion_rate/`](python/basics/q004_conversion_rate/)
+   - BtoB SaaSの利用ログ分析、ファネル分析、KPI集計につながる基礎課題です。
+3. **pandasによるデータ確認**
    - [`python/pandas/q001_read_csv_basic/`](python/pandas/q001_read_csv_basic/)
-   - [`python/basics/q010_flask_summary_app/`](python/basics/q010_flask_summary_app/)
+   - 分析前のデータ確認、欠損値確認、EDAにつながる基礎です。
+4. **BI / KPIダッシュボード設計**
+   - [`bi/dashboards/btob_saas_kpi_dashboard_design/`](bi/dashboards/btob_saas_kpi_dashboard_design/)
+   - 誰が何を判断するための画面かを意識して、KPIの見せ方を整理しています。
+5. **SQL・Python・Excelの基礎ログ**
+   - [`sql/drills/`](sql/drills/)
    - [`python/basics/`](python/basics/)
-3. **Excelの学習成果**
-   - [`learning/spreadsheets/excel-roadmap-q011-q020/`](learning/spreadsheets/excel-roadmap-q011-q020/)
-4. **中長期の学習計画**
-   - [`roadmap/`](roadmap/)
+   - [`learning/spreadsheets/`](learning/spreadsheets/)
 
 ---
 
 ## おすすめ閲覧順
-「何ができるか」→「どう学んだか」→「今後どう伸ばすか」の順で見ると、理解しやすいです。
+「BtoB SaaSの分析テーマ」→「その土台になる基礎スキル」→「今後の伸ばし方」の順で見ると、理解しやすいです。
 
-1. **ルート README**
-   - このポートフォリオ全体の目的と構成を把握できます。
-2. **SQLの成果物**
+1. **BtoB SaaS分析ミニ成果物**
+   - [`analysis/product_analytics/user_event_funnel_mini/`](analysis/product_analytics/user_event_funnel_mini/)
+   - 課題、指標、集計結果、改善提案までを1ページで確認できます。
+2. **Pythonログ集計・CVR計算**
+   - [`python/basics/q003_user_event_count/`](python/basics/q003_user_event_count/)
+   - [`python/basics/q004_conversion_rate/`](python/basics/q004_conversion_rate/)
+   - プロダクト分析の土台になるイベント件数集計と割合計算を確認できます。
+3. **SQLの基礎〜集計練習**
    - [`sql/drills/2026-04/`](sql/drills/2026-04/)
-   - 比較的新しい学習内容から、SQLの到達度を確認できます。
-3. **Pythonの成果物**
-   - [`python/basics/q010_flask_summary_app/`](python/basics/q010_flask_summary_app/)
-   - 基礎課題から簡単なWebアプリまでの流れを確認できます。
-4. **Excelの成果物**
+   - 日付関数、ウィンドウ関数、要約集計など、KPI集計に必要なSQLの基礎を確認できます。
+4. **pandas / Excel / BIの基礎**
+   - [`python/pandas/q001_read_csv_basic/`](python/pandas/q001_read_csv_basic/)
    - [`learning/spreadsheets/excel-roadmap-q011-q020/`](learning/spreadsheets/excel-roadmap-q011-q020/)
-   - 関数・参照・ピボットテーブルなどの基礎学習を確認できます。
-5. **ロードマップ**
+   - [`bi/dashboards/btob_saas_kpi_dashboard_design/`](bi/dashboards/btob_saas_kpi_dashboard_design/)
+5. **ロードマップ・学習ログ**
    - [`roadmap/`](roadmap/)
-   - 今後どのように実務レベルへ近づけるかの計画を確認できます。
+   - [`notes/`](notes/)
+   - 今後、学習内容をどのように成果物へつなげるかを確認できます。
 
 ---
 
 ## 代表的な成果物
+
+### BtoB SaaS分析ミニ成果物
+- [`analysis/product_analytics/user_event_funnel_mini/`](analysis/product_analytics/user_event_funnel_mini/)
+  - ユーザー行動ログから view / click / purchase を集計し、CVRと改善仮説を整理
+  - 活用場面: ファネル分析、オンボーディング改善、機能利用率分析、プロダクト改善提案
+
+### Python / pandas
+- [`python/basics/q003_user_event_count/`](python/basics/q003_user_event_count/)
+  - イベント件数集計
+  - 活用場面: ログイン数、クリック数、機能利用回数、アクティブ率の基礎集計
+- [`python/basics/q004_conversion_rate/`](python/basics/q004_conversion_rate/)
+  - click率・purchase率の計算
+  - 活用場面: CVR、トライアル転換率、商談化率、オンボーディング完了率の計算
+- [`python/pandas/q001_read_csv_basic/`](python/pandas/q001_read_csv_basic/)
+  - pandasによるCSV読み込み、データ確認の基礎
+  - 活用場面: 分析前のデータ確認、欠損値・データ型確認、EDA
 
 ### SQL
 - [`sql/drills/2026-02/`](sql/drills/2026-02/)
@@ -61,20 +87,12 @@ BtoB SaaS領域の **データアナリスト / プロダクトアナリスト**
   - サブクエリ、EXISTS、CASE、相関サブクエリなど
 - [`sql/drills/2026-04/`](sql/drills/2026-04/)
   - 日付関数、文字列関数、ウィンドウ関数、要約集計など
+  - 活用場面: 月次KPI、ユーザー別ランキング、継続率、顧客セグメント別集計
 
-### Python
-- [`python/pandas/q001_read_csv_basic/`](python/pandas/q001_read_csv_basic/)
-  - pandasによるCSV読み込み、データ確認の基礎
-- [`python/basics/q001_sales_total/`](python/basics/q001_sales_total/)
-  - CSV読み込み、関数、例外処理の基礎
-- [`python/basics/q005_survey_average/`](python/basics/q005_survey_average/)
-  - 条件分岐と平均計算
-- [`python/basics/q008_inventory_order/`](python/basics/q008_inventory_order/)
-  - 在庫確認、更新、注文処理
-- [`python/basics/q009_file_error_handling/`](python/basics/q009_file_error_handling/)
-  - ファイル読み込み時のエラー処理
-- [`python/basics/q010_flask_summary_app/`](python/basics/q010_flask_summary_app/)
-  - Flaskを使った簡単なWebアプリ
+### BI / Dashboard
+- [`bi/dashboards/btob_saas_kpi_dashboard_design/`](bi/dashboards/btob_saas_kpi_dashboard_design/)
+  - BtoB SaaSのKPIダッシュボード設計メモ
+  - 活用場面: PM、CS、BizOpsが見るKPI整理と意思決定支援
 
 ### Spreadsheets / Excel
 - [`learning/spreadsheets/excel-roadmap-q001-q010/`](learning/spreadsheets/excel-roadmap-q001-q010/)
@@ -151,25 +169,35 @@ portfolio/
 ---
 
 ## 採用担当者の方へ
-このリポジトリでは、派手な成果物よりも、まずは **基礎を着実に積み上げている過程** を見える形にすることを重視しています。
+このリポジトリでは、派手な成果物よりも、**SQL・Python・pandas・BIの基礎を、BtoB SaaSのデータ分析にどう活かすか** を見える形にすることを重視しています。
 
-特に以下を見ていただくと、学習の進め方が分かりやすいです。
+現時点では学習途中の内容も含みますが、各課題で以下を残すようにしています。
+- 何のために取り組んだか
+- どの処理を使ったか
+- BtoB SaaSのKPI集計、ユーザー行動分析、ファネル分析、ダッシュボード作成にどうつながるか
+
+特に以下を見ていただくと、データ分析職に向けた学習の方向性が分かりやすいです。
+- BtoB SaaS分析ミニ成果物: [`analysis/product_analytics/user_event_funnel_mini/`](analysis/product_analytics/user_event_funnel_mini/)
+- Pythonログ集計: [`python/basics/q003_user_event_count/`](python/basics/q003_user_event_count/)
+- CVR計算: [`python/basics/q004_conversion_rate/`](python/basics/q004_conversion_rate/)
+- pandas: [`python/pandas/`](python/pandas/)
 - SQL: [`sql/drills/`](sql/drills/)
-- Python: [`python/basics/`](python/basics/) / [`python/pandas/`](python/pandas/)
-- Excel: [`learning/spreadsheets/`](learning/spreadsheets/)
-- Roadmap: [`roadmap/`](roadmap/)
+- BI設計: [`bi/dashboards/`](bi/dashboards/)
 
 ---
 
 ## 次のアクション
-- 各成果物フォルダの README を **「目的 / 使用技術 / 実行方法 / 学び」** の形式に統一する
-- `analysis/` に分析ミニプロジェクトを追加する
-- Pythonでデータ分析寄りの課題を増やす
-- GitHub上で、初見の人でも追いやすい導線にさらに改善する
+- `q003_user_event_count` と `q004_conversion_rate` を発展させ、ユーザー行動分析のミニ成果物を増やす
+- 各成果物フォルダの README を **「目的 / 使用技術 / 実行方法 / 学び / BtoB SaaSでどう活かせるか」** の形式に統一する
+- `analysis/` に、ファネル分析・コホート分析・解約リスク分析のミニプロジェクトを追加する
+- `bi/` に、KPIダッシュボードの設計メモとスクリーンショットを追加する
+- GitHub上で、初見の人でも「分析テーマ → 使用技術 → 示唆」が追いやすい導線に改善する
 
 ---
 
 ## 更新ログ
+- 2026-07-03: BtoB SaaSデータ分析職向けに、ルートREADMEの導線と代表成果物の見せ方を調整
+- 2026-07-03: `analysis/product_analytics/user_event_funnel_mini/` と `bi/dashboards/btob_saas_kpi_dashboard_design/` を追加
 - 2026-05-09: `python/pandas/q001_read_csv_basic/` を追加。pandasでCSV読み込みとデータ確認の基礎を学習
 - 2026-05-09: `notes/2026-05-09_learning_log.md` を追加。SQL・Python・pandas・Excelの学習ログを記録
 - 2026-04-15: ルート README を全面見直し。成果物の説明、読み方、構成、導線を改善

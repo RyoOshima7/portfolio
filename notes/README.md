@@ -18,3 +18,4 @@ Markdown, 振り返り, 設計メモ
 ## 学習ログ
 - [`2026-05-09_learning_log.md`](2026-05-09_learning_log.md)：SQL・Python・pandas・Excelの復習とpandas q001の学習記録
 - [`2026-06-29_learning_log.md`](2026-06-29_learning_log.md)：SQL q027（ウィンドウ関数）の復習、Python q001〜q004の確認、翌日のPython復習準備
+- [`2026-07-03_learning_log.md`](2026-07-03_learning_log.md)：Python基礎 q002（商品別売上集計）とSQL q026（科目内順位）の学習記録
