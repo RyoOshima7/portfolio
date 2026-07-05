@@ -23,3 +23,6 @@ SQL, SELECT, JOIN, 集計関数, サブクエリ, ウィンドウ関数, Markdow
 - `q028_groupby_club_group_student_count.sql`
 - `q029_join_non_null_position.sql`
 - `q030_summary_club_count_avg_point.sql`
+
+## 次に改善するなら
+- `q027_window_top_subject_per_student.sql` では、学生ごとに最高点の科目を1件だけ取り出す処理を練習しました。次に改善するなら、顧客ごとの最新利用日や企業ごとの最も利用された機能など、BtoB SaaSの利用ログ分析に近いデータ例でも同じパターンを再現します。
