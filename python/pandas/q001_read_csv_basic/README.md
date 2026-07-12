@@ -23,6 +23,10 @@ python python/pandas/q001_read_csv_basic/learning/main.py
 python learning/main.py
 ```
 
+## 処理の流れ
+
+`pathlib`を使ってCSVファイルの場所を指定し、`pd.read_csv()`でデータをDataFrameとして読み込みます。その後、先頭行・列名・データ型・欠損値・基本統計量を順番に表示し、分析前にデータの状態を確認します。
+
 ## 学習内容
 この課題では、以下を学習しました。
 
