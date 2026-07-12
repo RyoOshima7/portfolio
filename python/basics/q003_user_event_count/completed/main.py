@@ -2,6 +2,8 @@ import csv
 from pathlib import Path
 
 def count_events(file_path):
+    """CSVファイルを読み込み、対象イベントごとの件数を辞書で返す。"""
+    
     # 最初に各イベントの件数を 0 にしておく
     event_counts = {"view": 0, "click": 0, "purchase": 0}
 
