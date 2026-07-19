@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pandas as pd
 
-# main.py があるleaningフォルダを取得する
+# main.py があるlearningフォルダを取得する
 base_dir = Path(__file__).resolve().parent
 
 # CSVファイルの場所を指定する
