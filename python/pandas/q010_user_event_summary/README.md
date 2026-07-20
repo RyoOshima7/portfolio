@@ -6,7 +6,7 @@
 
 ## 処理の流れ
 
-pandasでCSVを読み込み、head()で内容を確認した後、value_counts()でevent列を行動種類別に集計した。
+pandasでCSVを読み込み、head()で内容を確認した後、value_counts()でevent列を行動種類別に集計した。さらに、pd.crosstab()を使ってページ別・行動種類別の発生件数を集計した。
 
  ## 結果から何が言えるか
 
