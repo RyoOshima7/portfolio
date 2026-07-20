@@ -17,3 +17,4 @@
 ## 企業研究一覧
 
 - [株式会社HERP：データアナリスト職](herp-data-analyst.md)
+- [株式会社hacomono：データアナリスト職](hacomono-data-analyst.md)
