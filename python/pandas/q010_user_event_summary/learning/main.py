@@ -19,3 +19,12 @@ event_counts = df["event"].value_counts()
 
 print("=== 行動種類別の発生件数 ===")
 print(event_counts)
+
+# ページ別・行動種類別の発生件数を集計する
+page_event_counts = pd.crosstab(
+    index=df["page"],
+    columns=df["event"],
+)
+
+print("=== ページ別・行動種類別の発生件数 ===")
+print(page_event_counts)
