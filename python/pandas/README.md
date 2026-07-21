@@ -18,4 +18,5 @@ Python, pandas, pathlib, CSV
 
 ## 課題一覧
 - [`q001_read_csv_basic/`](q001_read_csv_basic/)：CSV読み込みとデータ確認の基礎
+- [`q009_monthly_sales_summary/`](q009_monthly_sales_summary/)：月別売上の集計（groupby・日付処理）
 - [`q010_user_event_summary/`](q010_user_event_summary/)：ユーザー行動ログの集計（value_counts）
